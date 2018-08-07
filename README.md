@@ -1,2 +1,2 @@
-# GettingAndCleanningData
+# GettingAndCleaningData
 coursera project
