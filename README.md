@@ -22,4 +22,4 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 * a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md
 
-* a REASME.md 
+* a README.md 
