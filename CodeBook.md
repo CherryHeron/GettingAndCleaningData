@@ -61,11 +61,11 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 > Variables in the tidydata.txt
 
-- Identifiers
+* Identifiers
 
-* subject: The ID of the test subject, integer, ranging from 0 to 30.
+  - subject: The ID of the test subject, integer, ranging from 0 to 30.
 
-* activity: The type of activity performed when the corresponding measurements were taken, including:
+  - activity: The type of activity performed when the corresponding measurements were taken, including:
 
 WALKING: subject was walking
 WALKING_UPSTAIRS: subject was walking upstairs
@@ -74,7 +74,7 @@ SITTING: subject was sitting
 STANDING: subject was standing
 LAYING: subject was laying
 
-- Measurements
+* Measurements
 
 The measurements are classified in two domains:
 
@@ -88,7 +88,7 @@ Furthermore, measurements have included thress dimensional directions, indicated
 
 Thus, measurements are listed as follows:
 
-* Time domain:
+  - Time domain:
 
 timeDomainBodyAccelerometerMeanX
 timeDomainBodyAccelerometerMeanY
@@ -145,7 +145,7 @@ timeDomainBodyGyroscopeMagnitudeStandardDeviation
 timeDomainBodyGyroscopeJerkMagnitudeMean
 timeDomainBodyGyroscopeJerkMagnitudeStandardDeviation
 
-* Frequency domain:
+  - Frequency domain:
 
 frequencyDomainBodyAccelerometerMeanX
 frequencyDomainBodyAccelerometerMeanY
