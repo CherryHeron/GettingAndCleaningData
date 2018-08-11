@@ -43,3 +43,4 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 * README.md, this file, which provides an overview of the data set and how it was created.
 * CodeBook.md, the code book, which describes the contents of the data set (data, variables and transformations used to generate the data).
 * run_analysis.R, the R script that was used to create the data set.
+* A tidydata.txt contains the tidy data set.
