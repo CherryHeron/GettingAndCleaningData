@@ -34,7 +34,17 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 * set them to the variables that will be used.
 
-* merge the same kind of variables first. Then merge the varibles togther.*
+* merge the same kind of variables first. Then merge the varibles togther.
+
+* merge the training and the test sets to create one data set.
+
+* extracts only the measurements on the mean and standard deviation for each measurement. 
+
+* use descriptive activity names to name the activities in the data set.
+
+* label the data set with descriptive variable names.
+
+* create a second, independent tidy data set with the average of each variable for each activity and each 
 
 ## Variables
 
@@ -52,6 +62,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 > Variables in the tidydata.txt
 
 - Identifiers
+
 * subject: The ID of the test subject, integer, ranging from 0 to 30.
 
 * activity: The type of activity performed when the corresponding measurements were taken, including:
@@ -188,3 +199,10 @@ frequencyDomainBodyGyroscopeJerkMagnitudeMean
 frequencyDomainBodyGyroscopeJerkMagnitudeStandardDeviation
 frequencyDomainBodyGyroscopeJerkMagnitudeMeanFrequency
 
+subject.
+
+### Transformations of variables
+
+The variable names were replaced with descriptive variable names:
+The prefix f and t were replaced by frequencyDomain and timeDomain respectively.
+Acc, Gyro, Mag, Freq, mean, and std were replaced by Accelerometer, Gyroscope, Magnitude, Frequency, Mean, and StandardDeviation respectively.
