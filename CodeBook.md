@@ -73,7 +73,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
     - STANDING: subject was standing
     - LAYING: subject was laying
 
-### Measurements
+* Measurements
 
 The measurements are classified in two domains:
 
@@ -87,7 +87,7 @@ Furthermore, measurements have included thress dimensional directions, indicated
 
 Thus, measurements are listed as follows:
 
-  + Time domain:
+   - Time domain:
 
 timeDomainBodyAccelerometerMeanX
 timeDomainBodyAccelerometerMeanY
