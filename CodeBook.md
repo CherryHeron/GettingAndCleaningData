@@ -74,7 +74,7 @@ SITTING: subject was sitting
 STANDING: subject was standing
 LAYING: subject was laying
 
-* Measurements
+#### Measurements
 
 The measurements are classified in two domains:
 
@@ -87,8 +87,8 @@ By method of measuresments, there are mean and standard deviation of both above 
 Furthermore, measurements have included thress dimensional directions, indicated by X, Y, Z.
 
 Thus, measurements are listed as follows:
- 
- - Time domain:
+
+  + Time domain:
 
 timeDomainBodyAccelerometerMeanX
 timeDomainBodyAccelerometerMeanY
@@ -145,7 +145,7 @@ timeDomainBodyGyroscopeMagnitudeStandardDeviation
 timeDomainBodyGyroscopeJerkMagnitudeMean
 timeDomainBodyGyroscopeJerkMagnitudeStandardDeviation
 
- - Frequency domain:
+   - Frequency domain:
 
 frequencyDomainBodyAccelerometerMeanX
 frequencyDomainBodyAccelerometerMeanY
