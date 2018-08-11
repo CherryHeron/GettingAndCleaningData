@@ -204,3 +204,4 @@ frequencyDomainBodyGyroscopeJerkMagnitudeMeanFrequency
 The variable names were replaced with descriptive variable names:
 The prefix f and t were replaced by frequencyDomain and timeDomain respectively.
 Acc, Gyro, Mag, Freq, mean, and std were replaced by Accelerometer, Gyroscope, Magnitude, Frequency, Mean, and StandardDeviation respectively.
+Reomved the unwanted sings ()-.
