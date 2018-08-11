@@ -5,23 +5,9 @@ download.file(fileUrl,destfile="./data/Data.zip", mode = "wb")
 #unzip the data
 unzip(zipfile="./data/Data.zip", exdir="./data")
 #find the unzipped data in the directory, it's a file folder called "UCI HAR Dataset"
-#open the folder, there're another two folders in it, "test" and "train".
-#from the readme.txt, I learned about the contents of the test data and the training data.
-#The dataset includes the following files:
-#=========================================
-# - 'README.txt'
-#- 'features_info.txt': Shows information about the variables used on the feature vector.
-#- 'features.txt': List of all features.
-#- 'activity_labels.txt': Links the class labels with their activity name.
-#- 'train/X_train.txt': Training set.
-#- 'train/y_train.txt': Training labels.
-#- 'test/X_test.txt': Test set.
-#- 'test/y_test.txt': Test labels.
-# for the train and test data, the following descriptions are equivalent:
-#-'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-#So, from above, from X_train.txt and X_test.txt I'll have the traing and test result of each observation.
+#read the README.txt, from X_train.txt and X_test.txt I'll have the traing and test result of each observation.
 #subject_train.txt and subject_test.txt have infomation about the subjects being traning and tested.
-#And the labels related to activities are activity_labels.txt. 
+#and the labels related to activities are activity_labels.txt. 
 #In order to merge taining and test data into one data set. 
 #I would have to merge the same kind of variables first.
 #Then merge the varibles togther.
@@ -53,7 +39,7 @@ head(DataSet)
 featuresname <- as.character(Features$V2)
 colnames(DataSet) <- c("subject", "activity", featuresname)
 #Extracts only the measurements on the mean and standard deviation for each measurement.
-# That is to find column names which is features that have names including mean and std.
+#That is to find column names which is features that have names including mean and std.
 featureswanted <- Features$V2[grep("mean\\(\\)|std\\(\\)", Features$V2)]
 featureswantednames <- as.character(featureswanted)
 # And subset the data set with these columns only
@@ -77,8 +63,7 @@ names(SubData)<-gsub("Gyro", "Gyroscope", names(SubData))
 names(SubData)<-gsub("Mag", "Magnitude", names(SubData))
 names(SubData)<-gsub("BodyBody", "Body", names(SubData))
 str(SubData)
-# creates a second, independent tidy data set with 
-#the average of each variable for each activity and each subject.
+# creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 library(reshape2)
 meltSubData <- melt(SubData, id = c("subject", "activity"))
 Data2 <- dcast(meltSubData, subject + activity ~ variable, mean) 
