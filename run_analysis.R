@@ -41,6 +41,7 @@ colnames(DataSet) <- c("subject", "activity", featuresname)
 #Extracts only the measurements on the mean and standard deviation for each measurement.
 #That is to find column names which is features that have names including mean and std.
 featureswanted <- Features$V2[grep("mean\\(\\)|std\\(\\)", Features$V2)]
+featureswanted <- gsub("[-()]", "", featuresWanted)
 featureswantednames <- as.character(featureswanted)
 # And subset the data set with these columns only
 SubData <- subset(DataSet, select = c("subject", "activity", featureswantednames))
