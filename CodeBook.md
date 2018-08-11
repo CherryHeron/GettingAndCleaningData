@@ -66,12 +66,12 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
   - subject: The ID of the test subject, integer, ranging from 0 to 30.
 
   - activity: The type of activity performed when the corresponding measurements were taken, including:
-  WALKING: subject was walking
-  WALKING_UPSTAIRS: subject was walking upstairs
-  WALKING_DOWNSTAIRS: subject was walking downstairs
-  SITTING: subject was sitting
-  STANDING: subject was standing
-  LAYING: subject was laying
+    - WALKING: subject was walking
+    - WALKING_UPSTAIRS: subject was walking upstairs
+    - WALKING_DOWNSTAIRS: subject was walking downstairs
+    - SITTING: subject was sitting
+    - STANDING: subject was standing
+    - LAYING: subject was laying
 
 ### Measurements
 
