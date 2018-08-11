@@ -29,7 +29,7 @@ str(SubjectTrain)
 str(SubjectTest)
 str(Features)
 str(ActivityLabels)
-#Merges the data tables to create one data set.
+#Merge the data tables to create one data set.
 DataSet <- rbind(
        cbind(SubjectTrain, TrainSet, TrainLabels),
        cbind(SubjectTest, TestSet, TestLabels)
