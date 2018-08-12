@@ -37,14 +37,13 @@ DataSet <- rbind(
 head(DataSet)
 #change column names to be more accecible.
 featuresname <- as.character(Features$V2)
-colnames(DataSet) <- c("subject", "activity", featuresname)
+colnames(DataSet) <- c("subject",  featuresname, "activity")
 #Extracts only the measurements on the mean and standard deviation for each measurement.
 #That is to find column names which is features that have names including mean and std.
 featureswanted <- Features$V2[grep("mean\\(\\)|std\\(\\)", Features$V2)]
-featureswanted <- gsub("[-()]", "", featuresWanted)
 featureswantednames <- as.character(featureswanted)
 # And subset the data set with these columns only
-SubData <- subset(DataSet, select = c("subject", "activity", featureswantednames))
+SubData <- subset(DataSet, select = c("subject", featureswantednames, "activity"))
 str(SubData)
 #Use descriptive activity names to name the activities in the data set
 SubData$activity <- factor(SubData$activity, 
@@ -57,13 +56,14 @@ head(SubData$activity,10)
 #prefix f is replaced by frequency
 #Mag is replaced by Magnitude
 #BodyBody is replaced by Body
-names(SubData)<-gsub("^t", "time", names(SubData))
-names(SubData)<-gsub("^f", "frequency", names(SubData))
+#remove special characters
+names(SubData) <- gsub("[\\(\\)-]", "", names(SubData))
+names(SubData)<-gsub("^t", "timeDomain", names(SubData))
+names(SubData)<-gsub("^f", "frequencyDomain", names(SubData))
 names(SubData)<-gsub("Acc", "Accelerometer", names(SubData))
 names(SubData)<-gsub("Gyro", "Gyroscope", names(SubData))
 names(SubData)<-gsub("Mag", "Magnitude", names(SubData))
 names(SubData)<-gsub("BodyBody", "Body", names(SubData))
-str(SubData)
 # creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 library(reshape2)
 meltSubData <- melt(SubData, id = c("subject", "activity"))
