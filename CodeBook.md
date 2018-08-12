@@ -83,7 +83,7 @@ The measurements are classified in two domains:
 
 By method of measuresments, there are mean and standard deviation of both above domains, and weighted average of the frequency components of the frequency-domain magnitude.
 
-Furthermore, measurements have included thress dimensional directions, indicated by X, Y, Z. The 3-axial linear acceleration and 3-axial angular velocity captured using accelerometer and gyroscope are at a constant rate of 50Hz.
+Furthermore, measurements selected for this database come from the accelerometer and gyroscope 3-axial raw signals timeDomainAccelerometerX(Y/Z) and timeDomainGyroscopeX(Y/Z) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (timeDomainAccelerometerX(Y/Z) and timeDomainGravityAccelerometerX(Y/Z) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
 Thus, measurements are listed as follows:
 
