@@ -83,7 +83,7 @@ The measurements are classified in two domains:
 
 By method of measuresments, there are mean and standard deviation of both above domains, and weighted average of the frequency components of the frequency-domain magnitude.
 
-Furthermore, measurements have included thress dimensional directions, indicated by X, Y, Z.
+Furthermore, measurements have included thress dimensional directions, indicated by X, Y, Z. The 3-axial linear acceleration and 3-axial angular velocity captured using accelerometer and gyroscope are at a constant rate of 50Hz.
 
 Thus, measurements are listed as follows:
 
